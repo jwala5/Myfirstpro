@@ -1,0 +1,6 @@
+function separate(input){
+    inp = input.split(" ")
+    for(i =0;i<inp.length ; i++){
+        if(inp[i.length<3])
+    }
+}

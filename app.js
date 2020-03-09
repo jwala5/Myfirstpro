@@ -6,7 +6,7 @@ var variant = "";
 var modi = prompt("Enter the moving directions:", "");
 
 //splitting function using space delimiter
-var res = modi.split();
+var res = modi.split(" ");
 
 //object creation
 let queen = {
@@ -17,7 +17,7 @@ let queen = {
     }
 }
 // to check if string is alphabet
-function isAlpha(variant) {
+/*function isAlpha(variant) {
     if (variant >= 65 && variant <= 127) {
         return true;
     } else {
@@ -30,9 +30,11 @@ for (i = 0; i <= res.length; i++) {
     if (isAlphabet(res[i])) {
         str = str + res[i];
     }
-}
-direction = str;
-steps = res.splice(res.length - 1, 1);
+}*/
+var direction = res[0].slice(0, 1);
+console.log(direction);
+var steps = res[0].slice(1);
+console.log(steps);
 
 // movement function
 
@@ -43,6 +45,7 @@ function changeDirection(steps, direction) {
             if (boundaryCheck(temp)) {
                 queen.position.x = temp;
                 posLog(temp, 0);
+                return 0;
             } else {
                 console.log("Sorry Out of Boundary");
             }
@@ -124,12 +127,13 @@ function changeDirection(steps, direction) {
 // Boundary check Function
 function boundaryCheck(pos) {
     if (pos >= 0 && pos <= 8) {
-        return true;
+        return 1;
     } else {
-        return false;
+        return 0;
     }
 }
 // Position log
 function posLog(x, y) {
-    console.log("The queen is at" + $temp + "," + $temp2 + " position");
+    console.log("The queen is at" + $queen.position.x + "," + $queen.position.y + " position");
+    return 0;
 }
