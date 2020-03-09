@@ -206,10 +206,12 @@ hr {
     margin: 10px 0;
 }
 
-progress[value] {
-    height: 10px;
-    width: 350px;
+progress[value]:: {
+    height: 20px;
+    width: 300px;
     -webkit-appearance: none;
+    appearance: none;
+
 }
 
 progress[value]::-webkit-progress-bar {
@@ -218,8 +220,8 @@ progress[value]::-webkit-progress-bar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25 inset);
 }
 
-::-webkit-progress-value {
-    color: #F05136;
+progress {
+    background-color: rgb(66, 238, 181);
 }
 
 
