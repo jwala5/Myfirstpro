@@ -114,8 +114,8 @@ h4 {
 }
 
 #bio img {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     border-radius: 50%;
     margin: 100px;
 }
@@ -219,7 +219,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 ::-webkit-progress-value {
-    background-color: #F05136;
+    color: #F05136;
 }
 
 
