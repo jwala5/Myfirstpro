@@ -1,6 +1,7 @@
 let temp;
 let temp2;
 var str = "";
+var variant = "";
 // Input from user
 var modi = prompt("Enter the moving directions:", "");
 
@@ -15,13 +16,22 @@ let queen = {
         y: 0
     }
 }
+// to check if string is alphabet
+function isAlpha(variant) {
+    if (variant >= 65 && variant <= 127) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 //splice the no.
 for (i = 0; i <= res.length; i++) {
     if (isAlphabet(res[i])) {
         str = str + res[i];
     }
 }
-direction = str
+direction = str;
 steps = res.splice(res.length - 1, 1);
 
 // movement function
