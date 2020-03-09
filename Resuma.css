@@ -92,6 +92,7 @@ h4 {
     font-size: 1.8em;
     padding: 10px;
     border-radius: 5%;
+    border-color: black;
 }
 
 .link-button:hover {
@@ -99,6 +100,7 @@ h4 {
 }
 
 #bio {
+    margin: 20px;
     display: flex;
     align-items: center;
 }
@@ -118,6 +120,13 @@ h4 {
     margin: 100px;
 }
 
+#portfolio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
 p {
     font-size: 1.5em;
 }
@@ -134,6 +143,7 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    height: 600px
 }
 
 #potfolio,
@@ -161,7 +171,7 @@ hr {
 #portfolio div article {
     background: white;
     color: black;
-    height: 200px;
+    height: 400px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -187,9 +197,6 @@ hr {
     text-align: centers;
 }
 
--webkit-progress-value {
-    background-color: #F05136;
-}
 
 #skills ul {
     list-style: none;
@@ -203,21 +210,45 @@ progress[value] {
     height: 10px;
     width: 350px;
     -webkit-appearance: none;
-    background-color: #F05136;
 }
 
-progress[value]: ::-webkit-progress-bar {
+progress[value]::-webkit-progress-bar {
     background-color: grey;
     border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25 inset);
 }
+
+::-webkit-progress-value {
+    background-color: #F05136;
+}
+
 
 .input {
     line-height: 2em;
     width: 350px;
     border-radius: 3px;
     border-color: black;
+    margin: 20px 0;
+}
 
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: center;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#contact form input:last-child {
+    margin-top: 30px;
 }
 
 /*
