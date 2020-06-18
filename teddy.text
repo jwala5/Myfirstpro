@@ -1,9 +1,0 @@
-function separate(input){
-    inp = input.split(" ")
-    for(i =0;i<inp.length ; i++){
-        if(inp[i].length<3){
-            steps = inp[i].slice(-1);
-            direction = inp[i].slice(0,1);
-        }
-    }
-}
